@@ -1,17 +1,17 @@
 console.log("Exercise 2 - Word Cloud");
 
-let myParagraph = document.querySelector("#myParagraph")
-let paragText = myParagraph.textContent.toLowerCase().split(" ")
+let paragraph = document.querySelector("#myParagraph")
+let paraText = paragraph.textContent.toLowerCase().split(" ")
 let paraObject = {}
 let cloud = document.getElementById("myWordCloud")
 
 
-for(let i = 0; i < paragText.length; i++){
+for(let i = 0; i < paraText.length; i++){
     if(paraObject.hasOwnProperty(paraText[i])){
-        paraObject[paragText[i]]++
+        paraObject[paraText[i]]++
     }
     else{
-        paraObject[paragText[i]] = 1
+        paraObject[paraText[i]] = 1
     }
 }
 
@@ -116,4 +116,3 @@ let twelve = document.createElement("p")
 twelve.setAttribute("class", "twelve")
 twelve.textContent = twelveCommon[11]
 cloud.append(twelve)
-
