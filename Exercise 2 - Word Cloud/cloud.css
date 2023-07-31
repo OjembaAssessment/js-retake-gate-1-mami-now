@@ -1,0 +1,15 @@
+ #myParagraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 20px;
+  }
+  
+  #myWordCloud h2 {
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+ 
